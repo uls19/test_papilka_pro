@@ -270,7 +270,7 @@
   max-width: 320px;
   height: 742px;
   background-color: rgb(255, 255, 255);
-  transition: all 2.5s;
+  transition: all 2s;
   cursor: pointer;
 }
 .slide-box__content {
