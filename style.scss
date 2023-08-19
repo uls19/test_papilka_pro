@@ -460,7 +460,8 @@
 
     &__image {
         height: 168px;
-        background: #F3F6F8;
+        background-color: #F3F6F8;
+        text-align: center;
     }
 
     &__image1 {
@@ -468,8 +469,18 @@
         background-image: url(./img/picture1.png);
         background-repeat: no-repeat;
         background-position: center;
-
     }
+
+    &__image1_color {
+        padding-top: 20px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    &__image1_color:hover {
+        opacity: 1;
+    }
+
 
     &__image2 {
         width: 444px;
@@ -478,7 +489,22 @@
         background-position: center;
     }
 
+    &__image2_color {
+        padding-top: 46px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    &__image2_color:hover {
+        opacity: 1;
+
+    }
+
+
 }
+
+
+
 
 .video-info {
     display: flex;
@@ -486,8 +512,7 @@
     max-width: 1774px;
     margin: 0 auto;
     height: 620px;
-    margin-bottom: 200px;
-   
+
 
     &__scroll {
         width: 930px;
@@ -504,28 +529,36 @@
         padding-right: 11px;
         width: 920px;
         height: 500px;
-        overflow-y: scroll;   
+        overflow-y: scroll;
     }
+
     &__scroll-items::-webkit-scrollbar {
-        width: 5px; 
-                  /* ширина всей полосы прокрутки */
-      }
+        width: 5px;
+        /* ширина всей полосы прокрутки */
+    }
+
     &__scroll-items::-webkit-scrollbar-track {
-        background: #BEC0C2;;        /* цвет зоны отслеживания */
-      } 
+        background: #BEC0C2;
+        ;
+        /* цвет зоны отслеживания */
+    }
+
     &__scroll-items::-webkit-scrollbar-thumb {
-        background-color: #005BC5;  /* цвет бегунка */
-        border-radius: 5px;       /* округлось бегунка */
-        border: 1px solid #005BC5;  /* отступ вокруг бегунка */
-      }  
+        background-color: #005BC5;
+        /* цвет бегунка */
+        border-radius: 5px;
+        /* округлось бегунка */
+        border: 1px solid #005BC5;
+        /* отступ вокруг бегунка */
+    }
 
     &__scroll-item1,
     &__scroll-item2,
     &__scroll-item5,
     &__scroll-item6 {
-        background-image: url(./img/video1.png);
+        background-image: url(./img/film.png), url(./img/video1.png);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom, center;
         width: 444px;
         height: 239px;
     }
@@ -534,9 +567,9 @@
     &__scroll-item4,
     &__scroll-item7,
     &__scroll-item8 {
-        background-image: url(./img/video2.png);
+        background-image: url(./img/film.png), url(./img/video2.png);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom, center;
         width: 444px;
         height: 239px;
     }
@@ -546,7 +579,7 @@
         width: 85px;
         margin: 94px auto 0px;
     }
-        
+
     &__scroll-text1,
     &__scroll-text2,
     &__scroll-text5,
@@ -599,13 +632,13 @@
 
     &__about-header {
         padding-top: 100px;
-    color: #242B32;
-    font-family: Roboto;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-        }
+        color: #242B32;
+        font-family: Roboto;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
 
     &__about-line {
         width: 143px;
@@ -614,42 +647,116 @@
     }
 
     &__about-text {
-    max-width: 750px;
-    padding-top: 18px;
-    color: #433C3C;
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    height: 144px;
+        max-width: 750px;
+        padding-top: 18px;
+        color: #433C3C;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        height: 144px;
     }
 
-    &__about-empty{
-    margin-bottom: 30px;
-    max-width: 750px; 
-    color: #433C3C;
-    font-family: Roboto, sans-serif ;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
+    &__about-empty {
+        margin-bottom: 30px;
+        max-width: 750px;
+        color: #433C3C;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
     }
-    &__about-button {}
+
+    // &__about-button {}
 
     &__about-link {
-    padding: 8px 20px;
-    color: #433C3C;
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration: none;
-    border: 1px solid  #433C3C;
+        padding: 8px 20px;
+        color: #433C3C;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        border: 1px solid #433C3C;
     }
+
     &__about-link:hover {
-        border: 1px solid  #005BC5;
-        color:#005BC5; 
+        border: 1px solid #005BC5;
+        color: #005BC5;
+    }
+}
+
+.events {
+    max-width: 1774px;
+    margin: 0 auto;
+
+    &__button-box {
+        display: flex;
+        justify-content: space-between;
+        padding-left: calc(50% - 94px);
+        height: 50px;
+    }
+
+    &__header {
+        text-align: center;
+        width: 192px;
+        color: #242B32;
+        font-family: Roboto, sans-serif;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__link {
+        display: inline-block;
+        text-align: center;
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+        transition: 0.3s;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &__button_color {
+        margin-top: 12px;
+        stroke: #005BC5;
+    }
+    &__button-left{
+        margin: 0 20px;
+    }
+    &__button-left:hover {
+        background-color: #005BC5;
+        box-shadow: none;
+    }
+
+    &__button-left:hover &__button_color {
+        stroke: #ffffff;
+    }
+
+
+    &__button-right:hover {
+        background-color: #005BC5;
+        box-shadow: none;
+    }
+
+    &__button-right:hover &__button_color {
+        stroke: #ffffff;
+    }
+
+
+    &__line {
+        margin: 0 auto;
+        width: 192px;
+        height: 1px;
+        background-color: #005BC5;
+    }
+
+    &__box {
+        margin: 0 auto;
+        margin-bottom: 200px;
     }
 }
