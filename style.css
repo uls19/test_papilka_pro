@@ -600,14 +600,12 @@
 }
 .events__button-left:hover {
   background-color: #005BC5;
-  box-shadow: none;
 }
 .events__button-left:hover .events__button_color {
   stroke: #ffffff;
 }
 .events__button-right:hover {
   background-color: #005BC5;
-  box-shadow: none;
 }
 .events__button-right:hover .events__button_color {
   stroke: #ffffff;
@@ -621,4 +619,130 @@
 .events__box {
   margin: 0 auto;
   margin-bottom: 200px;
+}
+
+.events-box {
+  display: flex;
+  gap: 18px;
+  margin-top: 35px;
+  width: 1774px;
+  height: 439px;
+  border-radius: 20px;
+  margin-bottom: 400px;
+}
+.events-box__card-info {
+  display: flex;
+  width: 430px;
+  height: 439px;
+  background-image: url(./img/event.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.events-box__card-content {
+  height: 180px;
+  border-radius: 20px;
+  background: #FFFFFE;
+  box-shadow: 2px 4px 11px 0px rgba(0, 0, 0, 0.09);
+}
+.events-box__card-data {
+  padding: 29px 34px 0;
+  color: #005BC5;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.4px;
+}
+.events-box__card-header {
+  padding: 7px 34px 18px;
+  color: #242B32;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+}
+.events-box__card-menu {
+  position: relative;
+  float: left;
+  width: 62px;
+  height: 44px;
+  background-image: url(./img/menu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px 30px 0px 20px;
+  border: 1px solid #005BC5;
+}
+.events-box__card-menu:hover {
+  cursor: pointer;
+}
+.events-box__card-menu:hover .events-box__card-popup {
+  display: block;
+}
+.events-box__card-popup {
+  position: absolute;
+  border: 1px solid #005BC5;
+  border-radius: 0px 0px 20px 0px;
+  background: #ffffff;
+  bottom: 44px;
+  left: -2px;
+  width: 48px;
+  height: 334px;
+  display: none;
+}
+.events-box__link-social {
+  background-size: 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 46px;
+  border-bottom: 1px solid #005BC5;
+}
+.events-box__link-social:last-child {
+  border-bottom: none;
+}
+.events-box__link-social:hover {
+  background-size: 85%;
+}
+.events-box__image1 {
+  background-image: url(./img/telegram-64x64.png);
+}
+.events-box__image2 {
+  background-image: url(./img/instagram.png);
+}
+.events-box__image3 {
+  background-image: url(./img/vk-64x64.png);
+}
+.events-box__image4 {
+  background-image: url(./img/whatsapp-64x64.png);
+}
+.events-box__image5 {
+  background-image: url(./img/viber-1-64x64.png);
+}
+.events-box__image6 {
+  background-image: url(./img/twitter.png);
+}
+.events-box__image7 {
+  background-image: url(./img/e-mail-64x64.png);
+}
+.events-box__card-button {
+  float: right;
+  padding: 12px 30px;
+  border: 1px solid #005BC5;
+  border-radius: 30px 0px 20px 0px;
+  background: #005BC5;
+  color: #FFF;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.3s;
+}
+.events-box__card-button:hover {
+  background: #ffffff;
+  color: #005BC5;
 }/*# sourceMappingURL=style.css.map */
