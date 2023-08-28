@@ -317,7 +317,7 @@
     max-width: 320px;
     height: 742px;
     background-color: rgb(255, 255, 255);
-    transition: all 2s;
+    transition: all 2.5s;
     cursor: pointer;
 
     &__content {
@@ -730,6 +730,7 @@
     }
     &__button-left:hover {
         background-color: #005BC5;
+        cursor: pointer;
         // box-shadow: none;
     }
 
@@ -740,6 +741,7 @@
 
     &__button-right:hover {
         background-color: #005BC5;
+        cursor: pointer;
         // box-shadow: none;
     }
 
@@ -755,19 +757,30 @@
         background-color: #005BC5;
     }
 
-    &__box {
-        margin: 0 auto;
-        margin-bottom: 200px;
-    }
 }
+
+.carousel-slider-wrapper {
+    width: 1774px; 
+    margin: 0 auto;
+    position: relative;
+    // border: 1px solid blueviolet;
+  }
+  .slider-scroller-wrap {
+    overflow: hidden;
+  }
+
 .events-box {
 display: flex;
-gap: 18px;
+// gap: 18px;
 margin-top: 35px;
-width: 1774px;
+// width: 1774px;
 height: 439px;
 border-radius: 20px;
-margin-bottom: 400px;
+margin-bottom: 50px;
+
+&__item {
+    flex: 0 0 25.22%;
+}
 
 &__card-info {
     display: flex;
@@ -796,6 +809,7 @@ font-weight: 400;
 line-height: 18.4px;
 }
 &__card-header {
+white-space: wrap;  
 padding: 7px 34px 18px;
 color:#242B32;
 font-family: Roboto, sans-serif;
@@ -829,7 +843,7 @@ line-height: 31px;
     border-radius: 0px 0px 20px 0px;
     background: #ffffff; 
     bottom: 44px;
-    left:-2px;
+    left:-1px;
     width: 48px;
     height: 334px;
     display: none;

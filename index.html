@@ -276,13 +276,13 @@
             <div class="events__button-box">
                 <h2 class="events__header">События</h2>
                 <div class="events__button">
-                    <a href="#" class="events__link events__button-left">
+                    <a class="events__link events__button-left" id="prev" onclick="arrowClick(-1)">
                         <svg class="events__button_color" width="13" height="24" viewBox="0 0 13 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 1L1 12L12 23" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <a href="#" class="events__link events__button-right">
+                    <a class="events__link events__button-right" id="next" onclick="arrowClick(1)">
                         <svg class="events__button_color" width="13" height="24" viewBox="0 0 13 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L12 12L1 23" stroke-linecap="round" stroke-linejoin="round" />
@@ -291,90 +291,114 @@
                 </div>
             </div>
             <div class="events__line"></div>
-            <div class="events-box">
-                <div class="events-box__card-info">
-                    <div class="events-box__card-content">
-                        <p class="events-box__card-data">10.09.2020 — 21.07.2021</p>
-                        <h3 class="events-box__card-header">Отборочные туры 2020–2021 РусьБанная</h3>
-                        <div class="events-box__card-menu">
-                            <div class="events-box__card-popup">
-                                <a href="https://web.telegram.org/a/" class="events-box__link-social events-box__image1"
-                                    target="_blank"></a>
-                                <a href="#" class="events-box__link-social events-box__image2"></a>
-                                <a href="https://vk.com/" class="events-box__link-social events-box__image3"
-                                    target="_blank"></a>
-                                <a href="#" class="events-box__link-social events-box__image4"></a>
-                                <a href="#" class="events-box__link-social events-box__image5"></a>
-                                <a href="#" class="events-box__link-social events-box__image6"></a>
-                                <a href="#" class="events-box__link-social events-box__image7"></a>
+            <div class="carousel-slider-wrapper">
+                <div class="slider-scroller-wrap">
+                    <div class="slider-scroller" id="gallery">
+                        <div class="events-box" id="wrapper">
+                            <div class="events-box__item">
+                                <div class="events-box__card-info">
+                                    <div class="events-box__card-content">
+                                        <p class="events-box__card-data">10.09.2020 — 21.07.2021</p>
+                                        <h3 class="events-box__card-header">1 Отборочные туры 2020–2021 РусьБанная</h3>
+                                        <div class="events-box__card-menu">
+                                            <div class="events-box__card-popup">
+                                                <a href="https://web.telegram.org/a/"
+                                                    class="events-box__link-social events-box__image1"
+                                                    target="_blank"></a>
+                                                <a href="#" class="events-box__link-social events-box__image2"></a>
+                                                <a href="https://vk.com/"
+                                                    class="events-box__link-social events-box__image3"
+                                                    target="_blank"></a>
+                                                <a href="#" class="events-box__link-social events-box__image4"></a>
+                                                <a href="#" class="events-box__link-social events-box__image5"></a>
+                                                <a href="#" class="events-box__link-social events-box__image6"></a>
+                                                <a href="#" class="events-box__link-social events-box__image7"></a>
+                                            </div>
+                                        </div>
+                                        <a class="events-box__card-button" href="#">Подробнее</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <a class="events-box__card-button" href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="events-box__card-info">
-                    <div class="events-box__card-content">
-                        <p class="events-box__card-data">10.09.2020 — 21.07.2021</p>
-                        <h3 class="events-box__card-header">Отборочные туры 2020–2021 РусьБанная</h3>
-                        <div class="events-box__card-menu">
-                            <div class="events-box__card-popup">
-                                <a href="https://web.telegram.org/a/" class="events-box__link-social events-box__image1"
-                                    target="_blank"></a>
-                                <a href="#" class="events-box__link-social events-box__image2"></a>
-                                <a href="https://vk.com/" class="events-box__link-social events-box__image3"
-                                    target="_blank"></a>
-                                <a href="#" class="events-box__link-social events-box__image4"></a>
-                                <a href="#" class="events-box__link-social events-box__image5"></a>
-                                <a href="#" class="events-box__link-social events-box__image6"></a>
-                                <a href="#" class="events-box__link-social events-box__image7"></a>
+                            <div class="events-box__item">
+                                <div class="events-box__card-info">
+                                    <div class="events-box__card-content">
+                                        <p class="events-box__card-data">10.09.2020 — 21.07.2021</p>
+                                        <h3 class="events-box__card-header">2 Отборочные туры 2020–2021 РусьБанная</h3>
+                                        <div class="events-box__card-menu">
+                                            <div class="events-box__card-popup">
+                                                <a href="https://web.telegram.org/a/"
+                                                    class="events-box__link-social events-box__image1"
+                                                    target="_blank"></a>
+                                                <a href="#" class="events-box__link-social events-box__image2"></a>
+                                                <a href="https://vk.com/"
+                                                    class="events-box__link-social events-box__image3"
+                                                    target="_blank"></a>
+                                                <a href="#" class="events-box__link-social events-box__image4"></a>
+                                                <a href="#" class="events-box__link-social events-box__image5"></a>
+                                                <a href="#" class="events-box__link-social events-box__image6"></a>
+                                                <a href="#" class="events-box__link-social events-box__image7"></a>
+                                            </div>
+                                        </div>
+                                        <a class="events-box__card-button" href="#">Подробнее</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <a class="events-box__card-button" href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="events-box__card-info">
-                    <div class="events-box__card-content">
-                        <p class="events-box__card-data">10.09.2020 — 21.07.2021</p>
-                        <h3 class="events-box__card-header">Отборочные туры 2020–2021 РусьБанная</h3>
-                        <div class="events-box__card-menu">
-                            <div class="events-box__card-popup">
-                                <a href="https://web.telegram.org/a/" class="events-box__link-social events-box__image1"
-                                    target="_blank"></a>
-                                <a href="#" class="events-box__link-social events-box__image2"></a>
-                                <a href="https://vk.com/" class="events-box__link-social events-box__image3"
-                                    target="_blank"></a>
-                                <a href="#" class="events-box__link-social events-box__image4"></a>
-                                <a href="#" class="events-box__link-social events-box__image5"></a>
-                                <a href="#" class="events-box__link-social events-box__image6"></a>
-                                <a href="#" class="events-box__link-social events-box__image7"></a>
-                            </div>
-                        </div>
-                        <a class="events-box__card-button" href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="events-box__card-info">
-                    <div class="events-box__card-content">
-                        <p class="events-box__card-data">10.09.2020 — 21.07.2021</p>
-                        <h3 class="events-box__card-header">Отборочные туры 2020–2021 РусьБанная</h3>
-                        <div class="events-box__card-menu">
-                            <div class="events-box__card-popup">
-                                <a href="https://web.telegram.org/a/" class="events-box__link-social events-box__image1"
-                                    target="_blank"></a>
-                                <a href="#" class="events-box__link-social events-box__image2"></a>
-                                <a href="https://vk.com/" class="events-box__link-social events-box__image3"
-                                    target="_blank"></a>
-                                <a href="#" class="events-box__link-social events-box__image4"></a>
-                                <a href="#" class="events-box__link-social events-box__image5"></a>
-                                <a href="#" class="events-box__link-social events-box__image6"></a>
-                                <a href="#" class="events-box__link-social events-box__image7"></a>
-                            </div>
-                        </div>
-                        <a class="events-box__card-button" href="#">Подробнее</a>
-                    </div>
-                </div>
 
+                            <div class="events-box__item">
+                                <div class="events-box__card-info">
+                                    <div class="events-box__card-content">
+                                        <p class="events-box__card-data">10.09.2020 — 21.07.2021</p>
+                                        <h3 class="events-box__card-header">3 Отборочные туры 2020–2021 РусьБанная</h3>
+                                        <div class="events-box__card-menu">
+                                            <div class="events-box__card-popup">
+                                                <a href="https://web.telegram.org/a/"
+                                                    class="events-box__link-social events-box__image1"
+                                                    target="_blank"></a>
+                                                <a href="#" class="events-box__link-social events-box__image2"></a>
+                                                <a href="https://vk.com/"
+                                                    class="events-box__link-social events-box__image3"
+                                                    target="_blank"></a>
+                                                <a href="#" class="events-box__link-social events-box__image4"></a>
+                                                <a href="#" class="events-box__link-social events-box__image5"></a>
+                                                <a href="#" class="events-box__link-social events-box__image6"></a>
+                                                <a href="#" class="events-box__link-social events-box__image7"></a>
+                                            </div>
+                                        </div>
+                                        <a class="events-box__card-button" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events-box__item">
+                                <div class="events-box__card-info">
+                                    <div class="events-box__card-content">
+                                        <p class="events-box__card-data">10.09.2020 — 21.07.2021</p>
+                                        <h3 class="events-box__card-header">4 Отборочные туры 2020–2021 РусьБанная</h3>
+                                        <div class="events-box__card-menu">
+                                            <div class="events-box__card-popup">
+                                                <a href="https://web.telegram.org/a/"
+                                                    class="events-box__link-social events-box__image1"
+                                                    target="_blank"></a>
+                                                <a href="#" class="events-box__link-social events-box__image2"></a>
+                                                <a href="https://vk.com/"
+                                                    class="events-box__link-social events-box__image3"
+                                                    target="_blank"></a>
+                                                <a href="#" class="events-box__link-social events-box__image4"></a>
+                                                <a href="#" class="events-box__link-social events-box__image5"></a>
+                                                <a href="#" class="events-box__link-social events-box__image6"></a>
+                                                <a href="#" class="events-box__link-social events-box__image7"></a>
+                                            </div>
+                                        </div>
+                                        <a class="events-box__card-button" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </main>
     <footer></footer>
 
